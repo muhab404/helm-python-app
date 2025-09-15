@@ -8,10 +8,9 @@ image:
 imagePullSecrets:
   - name: ecr-secret
 service:
-  type: NodePort
+  type: ClusterIP
   port: 5000
-  nodePort: 30007            # expose on localhost:30007
-
+  targetPort: 5000
 containerPort: 5000
 serviceAccount:
   create: false
