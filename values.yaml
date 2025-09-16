@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: 256057170649.dkr.ecr.us-east-1.amazonaws.com/python-app
-  tag: 9a3afa3
+  tag: 1f109fb
   pullPolicy: IfNotPresent   # since we imported manually into kind
 
 imagePullSecrets:
